@@ -31,7 +31,7 @@ void draw(){
       posisi_awal += pergeseran;
     }
   pushMatrix();
-    fill(255);
+    fill(254, 249, 167);
     box(300);
   popMatrix();
   
@@ -55,7 +55,6 @@ void draw(){
   
   // Mulut
   beginShape(TRIANGLES);
-  // mata kanan
   fill(153,76,0);
   vertex(0, 30,  151);
   vertex(-45, 90,  151);
@@ -63,34 +62,33 @@ void draw(){
   endShape();
   
   //TOPI
-  stroke(0,0,255);
-  beginShape(TRIANGLES);
-  fill(#1801FF);
-  vertex(0, -350,  0);
-  vertex(-150, -150,  151);
-  vertex(150,  -150,  151);
-  endShape();
-  
-  beginShape(TRIANGLES);
-  fill(#1801FF);
-  vertex(0, -350,  0);
-  vertex(-150, -150,  -151);
-  vertex(-150,  -150,  151);
-  endShape();
-  
-  beginShape(TRIANGLES);
-  fill(#1801FF);
-  vertex(0, -350,  0);
-  vertex(150, -150,  -151);
-  vertex(-150,  -150,  -151);
-  endShape();
-  
-  beginShape(TRIANGLES);
-  fill(#1801FF);
-  vertex(0, -350,  0);
-  vertex(150, -150,  151);
-  vertex(150,  -150,  -151);
-  endShape();
+  pushMatrix();
+    stroke(0,0,255);
+    beginShape(TRIANGLES);
+    fill(#1801FF);
+    vertex(0, -350,  0);
+    vertex(-150, -150,  151);
+    vertex(150,  -150,  151);
+    endShape();
+    beginShape(TRIANGLES);
+    fill(#1801FF);
+    vertex(0, -350,  0);
+    vertex(-150, -150,  -151);
+    vertex(-150,  -150,  151);
+    endShape();
+    beginShape(TRIANGLES);
+    fill(#1801FF);
+    vertex(0, -350,  0);
+    vertex(150, -150,  -151);
+    vertex(-150,  -150,  -151);
+    endShape();
+    beginShape(TRIANGLES);
+    fill(#1801FF);
+    vertex(0, -350,  0);
+    vertex(150, -150,  151);
+    vertex(150,  -150,  -151);
+    endShape();
+   popMatrix();
 }
 
 
